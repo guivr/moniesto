@@ -9,13 +9,7 @@ body {
   color: #333;
   font-size: 100%;
   margin: 0 auto;
-
-  max-width: 950px;
   padding: 0 8%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo {
@@ -41,12 +35,12 @@ body {
 }
 
 .hero-wrapper {
-  display: flex;
-  flex-direction: column;
+  margin-top: 5em;
 }
 
 .text {
   flex: 0 43%;
+  order: 2;
 }
 
 .button {
@@ -100,13 +94,7 @@ footer {
 }
 
 .video {
-  flex: 1;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transform-style: preserve-3d;
-  cursor: pointer;
+  display: none;
 }
 
 .demo-img {
@@ -150,9 +138,18 @@ footer {
   transform: translateZ(40px) scale(1);
 }
 
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+
 @media screen and (min-width: 768px) {
   .hero-wrapper {
-    flex-direction: row;
+    margin-top: 0;
+    display: flex;
   }
 
   .button:last-child {
@@ -160,12 +157,33 @@ footer {
   }
 
   .video {
+    flex: 1;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
     align-items: flex-end;
     justify-content: center;
+    order: 3;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
   }
 
   .text {
     flex: 0 43%;
+  }
+
+  body {
+    max-width: 950px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer {
+    position: initial;
+    bottom: initial;
   }
 }
 
