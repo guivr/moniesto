@@ -79,6 +79,8 @@ body {
   transform: translateY(-2px);
 }
 
+
+
 .button-principal:hover {
   box-shadow: 0 7px 34px 0 rgba(0,255,111,.7);
 }
@@ -161,4 +163,22 @@ footer {
   .text {
     flex: 0 43%;
   }
+}
+
+
+
+
+.profile-img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: .3em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
