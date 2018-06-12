@@ -1,3 +1,7 @@
+* {
+  outline: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -163,6 +167,10 @@ footer {
   .text {
     flex: 0 43%;
   }
+}
+
+.ignore-a {
+  display: block;
 }
 
 
