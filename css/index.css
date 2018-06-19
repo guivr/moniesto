@@ -227,3 +227,9 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.why {
+  margin-top: 2em;
+  display: block;
+  color: #999;
+}
